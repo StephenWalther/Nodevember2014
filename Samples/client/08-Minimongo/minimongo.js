@@ -14,7 +14,7 @@ Template.minimongo.helpers({
         console.log('movies template helper called');
         return db.movies.find();
 
-        // return db.movies.find().fetch(); <= don't call, every row is rerendered
+        //return db.movies.find().fetch(); // <= don't call, every row is rerendered
     },
 
     moviesCount: function() {
