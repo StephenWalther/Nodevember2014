@@ -1,0 +1,26 @@
+<head>
+  <title>Twitter Clone</title>
+</head>
+
+<body>
+  <h1>Realtime Tweet Stream</h1>
+
+  {{> tweets}}
+</body>
+
+<template name="tweets">
+
+  <form>
+      <input id="author" placeholder="author" />
+      <input id="tweet" placeholder="tweet" />
+      <button>Add</button>
+  </form>
+
+  {{#each getTweets}}
+    <dl>
+        <dt>{{author}}</dt>
+        <dd>{{tweet}}</dd>
+    </dl>
+  {{/each}}
+
+</template>
