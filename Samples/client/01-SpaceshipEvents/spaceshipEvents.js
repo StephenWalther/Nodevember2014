@@ -44,5 +44,11 @@ spaceship.onChanged(function() {
 /************
  Change temperature
  *************/
+Template.spaceshipEvents.created = function() {
+    spaceship.setTemperature(0);
+}
 
-spaceship.setTemperature(140);
+
+Template.spaceshipEvents.rendered = function() {
+    spaceship.setTemperature(140);
+}

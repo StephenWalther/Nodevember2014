@@ -37,4 +37,10 @@ Tracker.autorun(function() {
  Change temperature
  *************/
 
-spaceship.setTemperature(20);
+Template.spaceshipReact.created = function() {
+    spaceship.setTemperature(0);
+}
+
+Template.spaceshipReact.rendered = function() {
+    spaceship.setTemperature(20);
+}

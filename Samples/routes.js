@@ -16,4 +16,14 @@ Router.map(function () {
         path: '/02-SpaceshipReact'
     });
 
+
+    this.route('flush', {
+        path: '/03-Flush'
+    });
+
+    this.route('flushExplicit', {
+        path: '/04-FlushExplicit'
+    });
+
+
 });
