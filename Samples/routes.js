@@ -41,4 +41,11 @@ Router.map(function () {
         path: '/07-ReactiveVar'
     });
 
+
+
+    this.route('minimongo', {
+        path: '/08-Minimongo'
+    });
+
+
 });

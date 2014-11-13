@@ -1,0 +1,28 @@
+#minimongo {
+    padding:50px;
+}
+
+
+#minimongo table {
+    border-collapse: collapse;
+    border: solid 1px black;
+    width: 800px;
+    background-color: lightgray;
+}
+
+
+#minimongo table td {
+    border: solid 1px black;
+    padding: 10px;
+}
+
+
+#minimongo input {
+    width: 400px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#minimongo form {
+    margin-top: 20px;
+}

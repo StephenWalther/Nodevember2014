@@ -1,0 +1,34 @@
+<template name="minimongo">
+<div id="minimongo">
+
+    <h1>{{moviesCount}} Movies</h1>
+
+    <table>
+        <tbody>
+        {{#each movies}}
+            <tr>
+                <td>
+                    {{#if selected}}
+                      <input id="title" value="{{title}}" />
+                      <a id="save" href="#">save</a>
+                    {{else}}
+                      <a id="edit" href="#">edit</a> / <a id="delete" href="#">delete</a>
+                      {{title}}  ({{time}})
+                    {{/if}}
+                </td>
+            </tr>
+        {{/each}}
+        </tbody>
+    </table>
+
+
+    <form>
+        <fieldset>
+            <legend>Add Movie</legend>
+            <input id="newTitle" placeholder="New Movie Title" />
+            <button>Add</button>
+        </fieldset>
+    </form>
+
+</div>
+</template>
