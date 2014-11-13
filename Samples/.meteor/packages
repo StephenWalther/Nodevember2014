@@ -8,4 +8,5 @@ autopublish
 insecure
 iron:router
 my-highcharts
+reactive-var
 

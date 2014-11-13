@@ -26,4 +26,19 @@ Router.map(function () {
     });
 
 
+    this.route('session', {
+        path: '/05-Session'
+    });
+
+
+    this.route('sessionEquals', {
+        path: '/06-SessionEquals'
+    });
+
+
+
+    this.route('reactiveVar', {
+        path: '/07-ReactiveVar'
+    });
+
 });

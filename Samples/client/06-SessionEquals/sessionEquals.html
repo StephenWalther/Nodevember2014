@@ -1,0 +1,50 @@
+<template name="sessionEquals">
+
+
+    <h1>Session.get()</h1>
+
+    <table>
+        <tbody>
+        {{#each movies}}
+          <tr>
+              <td>
+              {{#if getSelected}}
+                  <input id="title" value="{{title}}" />
+              {{else}}
+                  <a id="edit1" href="#">edit</a>
+                  {{title}}
+              {{/if}}
+              </td>
+          </tr>
+        {{/each}}
+        </tbody>
+    </table>
+
+
+
+
+
+    <h1>Session.equals()</h1>
+
+
+    <table>
+        <tbody>
+        {{#each movies}}
+            <tr>
+                <td>
+                  {{#if equalsSelected}}
+                      <input id="title" value="{{title}}" />
+                  {{else}}
+                      <a id="edit2" href="#">edit</a>
+                    {{title}}
+                  {{/if}}
+                </td>
+            </tr>
+        {{/each}}
+        </tbody>
+    </table>
+
+
+</template>
+
+

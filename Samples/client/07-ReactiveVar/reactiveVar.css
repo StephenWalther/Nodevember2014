@@ -1,0 +1,9 @@
+#reactiveVar {
+    margin: 50px;
+}
+
+#reactiveVar div {
+    margin: 20px;
+    font-size: 32px;
+    font-weight: bold;
+}
