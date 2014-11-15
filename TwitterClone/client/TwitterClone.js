@@ -1,5 +1,5 @@
 
-Template.tweets.helpers({
+Template.body.helpers({
 
   // This code will run automatically when the list of tweets change
   getTweets: function () {
@@ -9,7 +9,7 @@ Template.tweets.helpers({
 });
 
 
-Template.tweets.events({
+Template.body.events({
 
   'submit': function (e, template) {
     e.preventDefault();

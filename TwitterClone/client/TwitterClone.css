@@ -1,1 +1,11 @@
-/* CSS declarations go here */
+
+
+.header {
+    height: 200px;
+    background: url(/meteor.png);
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 3px 3px black;
+    margin-bottom: 20px;
+}

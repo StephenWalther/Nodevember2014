@@ -1,0 +1,21 @@
+<head>
+    <title>Twitter Clone</title>
+</head>
+
+<body>
+
+  <!-- The Form -->
+  <form>
+    <input id="author">
+    <textarea id="tweet"></textarea>
+    <button>Tweet</button>
+  </form>
+
+  <!-- The Tweets -->
+  {{#each getTweets}}
+    {{author}}
+    {{tweet}}
+  {{/each}}
+
+</body>
+

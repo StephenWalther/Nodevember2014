@@ -3,24 +3,44 @@
 </head>
 
 <body>
-  <h1>Realtime Tweet Stream</h1>
+    <div class="header">
+        <div class="container">
+            Realtime Meteor Twitter Clone
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="well">
+                    <form>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">@</div>
+                                <input id="author" type="text" class="form-control" placeholder="Author">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="tweet" class="form-control" placeholder="Compose Tweet..."></textarea>
+                        </div>
+                        <button class="btn btn-primary btn-block">Tweet</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="list-group">
+                {{#each getTweets}}
+                    <div class="list-group-item">
+                        <i>@{{author}}</i>
+                        <p>{{tweet}}</p>
+                    </div>
+                {{/each}}
+                </div>
+            </div>
+        </div>
 
-  {{> tweets}}
+
+    </div>
+
+
 </body>
 
-<template name="tweets">
-
-  <form>
-      <input id="author" placeholder="author" />
-      <input id="tweet" placeholder="tweet" />
-      <button>Add</button>
-  </form>
-
-  {{#each getTweets}}
-    <dl>
-        <dt>{{author}}</dt>
-        <dd>{{tweet}}</dd>
-    </dl>
-  {{/each}}
-
-</template>
