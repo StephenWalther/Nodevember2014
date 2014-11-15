@@ -1,0 +1,14 @@
+#sessionEquals table {
+    border-collapse: collapse;
+    margin:50px;
+
+}
+
+#sessionEquals td {
+    border: solid 1px black;
+    padding: 10px;
+}
+
+#sessionEquals a {
+    text-decoration: none;
+}

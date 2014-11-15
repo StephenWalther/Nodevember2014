@@ -1,7 +1,10 @@
 #minimongo {
-    padding:50px;
+    padding:10px 50px;
 }
 
+#minimongo a {
+    text-decoration: none;
+}
 
 #minimongo table {
     border-collapse: collapse;
@@ -19,8 +22,8 @@
 
 #minimongo input {
     width: 400px;
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 #minimongo form {
