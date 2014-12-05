@@ -26,6 +26,10 @@ Template.sessionEquals.helpers({
 
 
 Template.sessionEquals.events({
+
+
+
+
     'click #edit1': function(e) {
         e.preventDefault();
 

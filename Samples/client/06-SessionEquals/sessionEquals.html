@@ -3,22 +3,22 @@
 
     <h1>Session.get()</h1>
 
-    <table>
-        <tbody>
-        {{#each movies}}
-          <tr>
-              <td>
-              {{#if getSelected}}
-                  <input id="title" value="{{title}}" />
-              {{else}}
-                  <a id="edit1" href="#">edit</a>
-                  {{title}}
-              {{/if}}
-              </td>
-          </tr>
-        {{/each}}
-        </tbody>
-    </table>
+<table>
+    <tbody>
+    {{#each movies}}
+      <tr>
+          <td>
+          {{#if getSelected}}
+              <input id="title" value="{{title}}" />
+          {{else}}
+              <a id="edit1" href="#">edit</a>
+              {{title}}
+          {{/if}}
+          </td>
+      </tr>
+    {{/each}}
+    </tbody>
+</table>
 
 
 
@@ -33,8 +33,10 @@
             <tr>
                 <td>
                   {{#if equalsSelected}}
+                      {{showTime}}
                       <input id="title" value="{{title}}" />
                   {{else}}
+                      {{showTime}}
                       <a id="edit2" href="#">edit</a>
                     {{title}}
                   {{/if}}

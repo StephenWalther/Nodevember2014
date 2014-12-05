@@ -1,0 +1,10 @@
+
+#modal {
+    margin: 50px;
+}
+
+#modalDialog {
+    display:none;
+    border: solid 2px black;
+    padding: 10px;
+}

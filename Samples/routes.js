@@ -48,4 +48,11 @@ Router.map(function () {
     });
 
 
+
+
+    this.route('modal', {
+        path: '/09-Modal'
+    });
+
+
 });
